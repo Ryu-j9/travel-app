@@ -7,7 +7,8 @@ import { initDB } from './api/favoriteDB';
 import HomeScreen from './screens/HomeScreen';
 import DetailScreen from './screens/DetailScreen';
 import FavoritesScreen from './screens/FavoritesScreen';
-//무제
+//무제 
+//빅뱅
 const Stack = createNativeStackNavigator();
 
 export default function App() {
