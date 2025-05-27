@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "travel-app",
+    "slug": "travel-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "extra": {
+      "tourApiKey": "Eu6OWmqWYR/vJHK7EbKQYB52RuLiKYx1jLaCOGiGq684p2IDu1bDWsiwuogWeQVSqAf9a0yeYfDKVoSbieJV6g==",
+      "kakaoApiKey": "3b2954d21498bdac5168e476ee5d385f",
+      "eas": {
+        "projectId": "bc85271f-8bed-45a2-939f-6b58a7ea7bab"
+      }
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.ballte17.travelapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photoPermission": "휴대폰 카메라 또는 갤러리의 접근권한이 필요합니다."
+        }
+      ],
+      [
+        "expo-sqlite",
+        {
+          "enableFTS": true,
+          "useSQLCipher": true,
+          "android": {
+            "enableFTS": false,
+            "useSQLCipher": false
+          },
+          "ios": {
+            "customBuildFlags": [
+              "-DSQLITE_ENABLE_DBSTAT_VTAB=1 -DSQLITE_ENABLE_SNAPSHOT=1"
+            ]
+          }
+        }
+      ]
+    ],
+    "owner": "ballte17"
+  }
+}
